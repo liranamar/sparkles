@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="171.898" height="223.175" viewBox="0 0 171.898 223.175" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Rectangle 5">
+<use xlink:href="#stroke0_0_21" fill="white"/>
+<mask id="stroke1_0_21" maskUnits="userSpaceOnUse" x="-0.209415" y="-0.101029" width="173" height="224" fill="black">
+<rect fill="white" x="-0.209415" y="-0.101029" width="173" height="224"/>
+<use xlink:href="#stroke0_0_21"/>
+</mask>
+<path d="M22.7435 219.385H144.923C155.214 219.385 163.625 211.172 163.87 200.883L168.102 23.2049C168.396 10.8662 157.006 1.54284 144.969 4.26878L18.5575 32.8952C9.92157 34.8509 3.79059 42.5255 3.79059 51.3801V200.432C3.79059 210.899 12.2761 219.385 22.7435 219.385Z" stroke-width="7.58117" stroke="#E6FF00" mask="url(#stroke1_0_21)"/>
+</g>
+<defs>
+<path id="stroke0_0_21" d="M3.79059 51.3801C3.79059 42.5255 9.92157 34.8509 18.5575 32.8952L144.969 4.26878C157.006 1.54284 168.396 10.8662 168.102 23.2049L163.87 200.883C163.625 211.172 155.214 219.385 144.923 219.385H22.7435C12.2761 219.385 3.79059 210.899 3.79059 200.432V51.3801Z"/>
+</defs>
+</svg>

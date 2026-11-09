@@ -1,0 +1,149 @@
+/* Hebrew app-screen mockups (Peres Center learning app).
+   All values are px from the Figma frames; each .phone sits inside a
+   scaled .stage so the composition shrinks as a whole. */
+
+.phone {
+  overflow: hidden;
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+}
+.phone > * { position: absolute; }
+.phone > img { max-width: none; object-fit: cover; }
+.phone p { margin: 0; line-height: normal; }
+
+.ph-blue { background: #0033a1; }
+
+/* yellow call-to-action pill */
+.m-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #e5ff00;
+  border: 2.799px solid #c9c003;
+  border-radius: 11.664px;
+  box-shadow: 0 2.799px 2.799px rgba(0, 0, 0, .25);
+  color: #0033a1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.m-btn--sm { border-width: 2.608px; border-radius: 8.692px; box-shadow: 0 2.608px 2.608px rgba(0,0,0,.25); font-size: 9.561px; }
+
+/* quiz answer option */
+.m-opt {
+  left: 20.53px;
+  width: 159.566px;
+  display: flex;
+  align-items: center;
+  padding-right: 9.8px;
+  overflow: hidden;
+  background: #fff;
+  border: .467px solid #e3e3e3;
+  border-radius: 9.331px;
+  box-shadow: 0 2.799px 2.799px rgba(0, 0, 0, .25);
+  color: #0033a1;
+  font-size: 8.398px;
+  line-height: normal;
+}
+.m-opt span { width: 139.037px; }
+.m-opt--on { background: #e5ff00; border: 1.866px solid #ff8d01; }
+
+/* quiz chrome */
+.m-progress { left: 11.66px; top: 37.79px; width: 177.295px; height: 9.798px; border-radius: 3.733px; background: #fff; overflow: hidden; direction: ltr; }
+.m-progress i { display: block; height: 100%; background: #e5ff00; }
+.m-star { max-width: none; }
+.m-title { right: 21.98px; top: 63.45px; color: #e5ff00; font-weight: 900; font-size: 16.796px; text-shadow: .933px 1.4px 0 #9747ff; white-space: nowrap; }
+.m-question { right: 22.39px; top: 88.18px; width: 151.168px; font-weight: 500; font-size: 9.798px; line-height: 12.131px !important; }
+.m-next { left: 25.19px; top: 376.52px; width: 53.655px; height: 15.863px; border-radius: 9.331px; font-size: 10.264px; }
+.m-prev { left: 137.64px; top: 376.52px; width: 40.591px; height: 15.863px; direction: ltr; }
+.m-prev p { position: absolute; left: 0; top: 0; width: 25.195px; text-align: right; direction: rtl; font-weight: 300; font-size: 6.532px; line-height: 7.932px !important; }
+.m-prev img { position: absolute; left: 29.39px; top: 2.33px; width: 11.198px; height: 11.198px; }
+
+/* entrepreneur result screens */
+.m-shadow-y { text-shadow: .869px 1.304px 0 #e5ff00; }
+.m-shadow-p { text-shadow: .869px 1.304px 0 #9747ff; }
+.m-center { left: 0; right: 0; text-align: center; }
+
+/* ---------- Peres page layout bits ---------- */
+.percy { position: relative; margin-top: -12px; }
+.percy__img { width: 541px; max-width: 100%; height: auto; margin-left: -89px; }
+.percy__say {
+  position: absolute;
+  left: 365px;
+  top: 246px;
+  font-family: var(--font-hand);
+  font-size: 40px !important;
+  color: #a42ba6;
+  white-space: nowrap;
+}
+.percy-app { margin-top: 94px; }
+.percy-app__phone { margin-top: -208px; }
+.percy-app__note { max-width: 466px; margin: 69px 0 0 365px; text-align: right; }
+
+@media (max-width: 1500px) { .percy__img { margin-left: 0; } }
+@media (max-width: 1100px) {
+  .percy__say { position: static; white-space: normal; font-size: 28px !important; margin-top: 8px; }
+  .percy-app__phone { margin-top: 0; max-width: 320px; }
+  .percy-app__note { margin-left: auto; }
+}
+
+.ov { position: absolute; inset: 0; }
+.m-status {
+  left: 0; right: 0; top: 0; height: 32px;
+  padding: 11px 0 0 28px;
+  direction: ltr;
+  font: 600 11px/1 -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}
+.m-status::after {
+  content: "";
+  position: absolute; right: 22px; top: 12px;
+  width: 18px; height: 8px;
+  border: 1px solid rgba(255,255,255,.8); border-radius: 2.5px;
+  background: linear-gradient(#fff, #fff) 1px 1px / 13px 4px no-repeat;
+}
+.m-icons { display: flex; flex-direction: column; align-items: center; gap: 0; color: #fff; font-size: 12.072px; direction: ltr; }
+.m-icons p { margin-bottom: 9.657px; text-align: center; }
+
+.fogg {
+  display: grid;
+  grid-template-columns: minmax(0, 607px) minmax(0, 617px);
+  justify-content: start;
+  column-gap: 0;
+  margin: 105px 0 0 clamp(0px, 6.5vw, 125px);
+}
+.fogg__right { padding-left: 46px; }
+@media (max-width: 1000px) {
+  .fogg { grid-template-columns: 1fr; row-gap: 48px; margin-left: 0; }
+  .fogg__right { padding-left: 0; }
+}
+.m-card { overflow: hidden; background: #fff; border: 3.843px solid #ff8d01; border-radius: 12.811px; box-shadow: 0 3.843px 3.843px rgba(0,0,0,.25); color: #0033a1; }
+.m-round { position: absolute; overflow: hidden; background: rgba(255,255,255,.1); border: 1.922px solid #3b079a; border-radius: 25.622px; box-shadow: 0 2.562px 2.562px rgba(0,0,0,.25); }
+.m-back { left: 0; top: 0; width: 100%; height: 0; }
+.m-back span { position: absolute; left: 236.69px; top: 65.66px; width: 11.53px; height: 5.765px; transform: rotate(-90deg); }
+.m-back span img { position: absolute; max-width: none; left: -.96px; top: -.96px; width: 13.45px; height: 8.085px; }
+.m-back p { position: absolute; right: 44.2px; top: 57.01px; width: 40.996px; text-align: right; font-size: 12.811px; line-height: 19.857px !important; }
+.m-task { left: 29.51px; width: 219.438px; overflow: hidden; border: .642px solid #e3e3e3; box-shadow: 0 3.85px 3.85px rgba(0,0,0,.25); color: #0033a1; }
+.m-list { position: absolute; left: 21.49px; top: 35.61px; width: 183.506px; display: flex; flex-direction: column; gap: 4.491px; }
+.m-list p { height: 17.324px; border-bottom: .321px solid #c7c7c7; font-size: 8.341px; line-height: 17px !important; text-align: right; }
+.m-avatars { position: absolute; left: 13.47px; top: 8.66px; display: flex; direction: ltr; filter: drop-shadow(0 1.373px .687px rgba(0,0,0,.34)); }
+.m-avatars span { position: relative; width: 19.223px; height: 19.223px; margin-right: -6.865px; }
+.m-avatars span:last-child { margin-right: 0; }
+.m-avatars img { width: 100%; height: 100%; }
+.m-avatars b { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 600; font-size: 8.582px; direction: rtl; }
+.m-kb { left: 0; right: 0; top: 362px; bottom: 0; padding: 7px 3px 0; background: #d1d4db; direction: ltr; display: flex; flex-direction: column; gap: 9px; }
+.m-kb div { display: flex; justify-content: center; gap: 4px; }
+.m-kb i { flex: 0 0 22.5px; height: 32px; border-radius: 4.5px; background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,.3); color: #000; font: 400 15px/32px -apple-system, "SF Pro Text", Arial, sans-serif; font-style: normal; text-align: center; }
+.m-kb i.w { flex-basis: 60px; background: #abb0ba; font-size: 11px; }
+.m-kb i.sp { flex: 1 1 auto; font-size: 11px; }
+.m-back--lg span { left: 302.2px; top: 83.83px; width: 14.721px; height: 7.361px; }
+.m-back--lg span img { left: -1.23px; top: -1.23px; width: 17.17px; height: 10.32px; }
+.m-back--lg p { right: 56.43px; top: 72.79px; width: 52.343px; font-size: 16.357px; line-height: 25.353px !important; }
+.hub-list { left: 16.36px; top: 283.79px; width: 315.691px; height: 453.908px; overflow: hidden; display: flex; flex-direction: column; gap: 16.357px; }
+.hub-item { position: relative; flex: none; height: 71.971px; overflow: hidden; background: #fff; border-right: 8.179px solid; border-radius: 20.446px; color: #0033a1; }
+.hub-item .hi-title, .hub-item .hi-sub { position: absolute; right: 67.88px; text-align: right; font-size: 14.721px; }
+.hub-item .hi-title { top: 16.36px; font-weight: 600; }
+.hub-item .hi-sub { top: 35.17px; font-weight: 300; }
+.hub-item .hi-time { position: absolute; left: 30.26px; top: 49.07px; direction: ltr; text-align: left; font-weight: 200; font-size: 11.45px; }

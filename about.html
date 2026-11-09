@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>about — sparkles</title>
+  <meta name="description" content="Liran Amar — multidisciplinary designer, photographer and design lecturer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Google+Sans+Code:wght@400;500;700&family=Libre+Caslon+Display&family=Neonderthaw&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-about">
+  <header class="site-header">
+    <a class="site-header__logo" href="index.html"><img src="assets/img/shared/sparkles-logo.svg" alt="sparkles — branding · ux/ui · solutions"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="site-nav__link" href="portfolio.html">portfolio</a>
+      <a class="site-nav__link" href="about.html" aria-current="page">about</a>
+      <a class="pill" href="#contact">let’s talk</a>
+    </nav>
+  </header>
+
+  <main class="wrap" style="--gutter: clamp(16px, 10.4vw, 200px); max-width: calc(1520px + 2 * var(--gutter));">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="stage" style="--w:800; --h:450">
+        <div class="stage__inner">
+          <p class="about-hero__hello" aria-hidden="true">Hello</p>
+          <p class="about-hero__intro" aria-hidden="true">my name is</p>
+          <h1 class="about-hero__name" id="about-title"><span class="visually-hidden">Hello, my name is </span>LIRAN</h1>
+          <div class="about-hero__photo"><img src="assets/img/about/liran.png" alt="Portrait of Liran Amar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-body" aria-label="About Liran">
+      <div class="about-body__bio">
+        <p>I'm a multidisciplinary designer and photographer with over 15 years of experience across a wide range of industries and creative fields, passionate about solving creative briefs, both printed and digital.</p>
+        <p>Throughout my career, I've developed a passion for visual storytelling, creative problem solving, and bringing ideas to life.</p>
+        <p>Since 2019, I've been sharing my knowledge as a design lecturer and mentor between H.I.T, The College of Management, studio 6B and The Open University, guiding aspiring designers on their creative journeys. My diverse experience has shaped my ability to collaborate, lead teams, and manage projects from concept to completion, always combining creativity with a thoughtful, people centered approach.</p>
+      </div>
+      <span class="about-body__rule" aria-hidden="true"></span>
+      <div class="about-body__edu">
+        <h2 class="visually-hidden">Education</h2>
+        <ul>
+          <li><span>2027</span><span>Design of Technological Environments - M.Design</span><span>H.I.T - Holon Institute of Technolog, Holon, Israel</span></li>
+          <li><span>2016</span><span>Graphic Design - Diploma</span><span>F.I.T - Fashion Institute of Technology, New York. U.S.A</span></li>
+          <li><span>2015</span><span>Still Photography - Diploma</span><span>F.I.T - Fashion Institute of Technology, New York. U.S.A</span></li>
+          <li><span>2012</span><span>Industrial Design, Fashion Specialty - B.S</span><span>Politecnico di Milano, Milan, Italy</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="contact__tag" id="contact-title">let’s talk</h2>
+      <div class="contact__card">
+        <div class="contact__group">
+          <a class="contact__icon" href="tel:+972523368885" aria-label="Call 052-336-8885"><img src="assets/img/about/phone.svg" width="35" height="35" alt=""></a>
+          <a class="contact__icon" href="https://wa.me/972523368885" target="_blank" rel="noopener" aria-label="WhatsApp 052-336-8885"><img src="assets/img/about/whatsapp.svg" width="35" height="35" alt=""></a>
+          <a class="contact__text" href="tel:+972523368885">052-336-8885</a>
+        </div>
+        <div class="contact__group contact__group--mail">
+          <a class="contact__icon" href="mailto:sprklsand@gmail.com" aria-label="Email"><img src="assets/img/about/mail.svg" width="42" height="30" alt=""></a>
+          <a class="contact__text" href="mailto:sprklsand@gmail.com">sprklsand@gmail.com</a>
+        </div>
+        <div class="contact__social">
+          <!-- TODO: replace # with the real profile URLs -->
+          <a href="#" aria-label="LinkedIn"><img src="assets/img/about/linkedin.svg" width="39" height="39" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="assets/img/about/instagram.svg" width="39" height="39" alt=""></a>
+          <a href="#" aria-label="Facebook"><img src="assets/img/about/facebook.svg" width="39" height="39" alt=""></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
